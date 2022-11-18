@@ -1,5 +1,6 @@
 class CreditCard:
   def __init__(self,card_number, limit):
+    # Check if credit card number is valid
     if self.isValid(card_number):
       self.card_number = card_number
       self.balance = 0
@@ -7,8 +8,9 @@ class CreditCard:
       self.isValid = True
     else:
       self.isValid = False 
-      self.balance = "error"  
-
+  
+  
+  # Function to valid credit number using Lugh10 
   def isValid(self,card_number):
     n_digits = len(card_number)
     n_sum = 0

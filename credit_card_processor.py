@@ -22,6 +22,8 @@ class CreditCardProcessor:
     action, name,amount = line
     cc = self.credit_cards[name]
     amount = int(amount[1:])
+    
+    # Ignore charge if credit card number is invalid and balance is under limit
     if cc.isValid and cc.balance + int(amount) < cc.limit:
         self.credit_cards[name].balance  += int(amount) 
     
