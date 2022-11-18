@@ -1,6 +1,6 @@
 # credit_card_processing
 
-** Overview ** 
+###### Overview
 A program that will add new credit card accounts and process the charge and credits against them, and display information. 
 
 CreditCardProcessor:
@@ -13,13 +13,13 @@ IsValid: boolean. Indicate if credit card holder has valid credit card.
 Balance: int. Store balance of valid credit cards. 
 Limit: int. Store credit card limit for valid credit cards.
 
-** Programming Language ** 
+###### Programming Language 
 Python
 I choose python for this project for the following reason: 
 1. More readable for reviewers  
 2. Easier to implement (I'm more familiar with Python)
 
-** Run code ** 
+###### Run code 
 - Run code: 
 ```
 python3 credit_card_processor.py {input_path}
