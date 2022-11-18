@@ -16,7 +16,6 @@ class CreditCardProcessor:
   
   def add(self, line):
     [action, name, card_number, amount] = line
-    # valid credit_card 
     self.credit_cards[name] = CreditCard(card_number, int(amount[1:])) 
      
   def charge(self,line):
